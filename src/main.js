@@ -32,4 +32,19 @@ theLet();
 for (let i = 0; i < 10; i++) {
     console.log(i);
 }
-console.log(i);  // error: i is not defined
+//console.log(i);  // error: i is not defined
+
+// const
+
+const user = {};
+
+user['name'] = 'John';
+user.age = 25;
+
+console.log(user.name);
+console.log(user.age);
+
+//user = {}; // error: Assignment to constant variable
+
+//const user.address = "x road y room"; // error
+//console.log(user.address);
