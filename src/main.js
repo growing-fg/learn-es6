@@ -1,16 +1,18 @@
 "use strict"
 
-function template (context) {
-    return `<h1>This is template</h1>
-<b>name</b>: ${context.name}<br>
-<b>age</b>: ${context.age}<br>
-<p>${context.message}</p>`
+function test1 (arg = 'default value') {
+    console.log('arg is ' + arg);
 }
 
-let html = template({
-    name: "Fred",
-    age: 28,
-    message: "I am so happy to learn es2015!"
-});
+test1();
+test1('passed value');
 
-document.getElementById('template').innerHTML = html;
+
+function test2 (a, b, c) {
+    console.log(a, b, c);
+    console.log(arguments);
+}
+
+let data = [1, 2, 3];
+test2(data);
+test2(...data);

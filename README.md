@@ -28,3 +28,9 @@
 +  Number.isFinite()  判断是否为有限数
 +  Number.isNaN()  判断是否为NaN
 +  Number.isInteger()  判断是否为整数，Number.isInteger(5.5) === false
+
+## 方法参数默认值 & 分包操作
++  定义方法时可直接给参数赋默认值
+    function test (a=1, b='test') {}
++  可以把数据以分包的方式给方法传参
+    test(...[15, 'spread opator'])
